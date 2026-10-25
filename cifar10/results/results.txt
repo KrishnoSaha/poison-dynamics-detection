@@ -1,0 +1,157 @@
+
+==========================================================================
+runs/dyn_adaptive_level.npz   attack=badnets rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 0.975   attack success rate 0.533
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.896     0.49       0.25       7.93%
+  loss_auc        0.713     0.00       0.00      10.53%
+  loss_shape      1.000     1.00       0.50       5.26%
+  spectral_dyn    0.977     0.87       0.43       5.95%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.999   equally-easy benign groups +0.496 (95th pct +0.544)   z = +16.8
+    CONFIRMED: moves together far more than equally-easy benign data.
+
+==========================================================================
+runs/dyn_adaptive_shape.npz   attack=badnets rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 1.000   attack success rate 0.971
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.896     0.49       0.25       7.93%
+  loss_auc        0.741     0.00       0.00      10.53%
+  loss_shape      0.985     0.93       0.46       5.66%
+  spectral_dyn    0.974     0.88       0.44       5.92%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.999   equally-easy benign groups +0.999 (95th pct +0.999)   z = -4.5
+    NOT CONFIRMED: no more coherent than equally-easy benign data.
+
+==========================================================================
+runs/dyn_badnets.npz   attack=badnets rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 0.984   attack success rate 1.000
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.896     0.49       0.25       7.93%
+  loss_auc        0.992     0.97       0.48       5.43%
+  loss_shape      0.524     0.00       0.00      10.53%
+  spectral_dyn    0.845     0.33       0.16       8.82%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.528   equally-easy benign groups +0.191 (95th pct +0.218)   z = +20.0
+    CONFIRMED: moves together far more than equally-easy benign data.
+    [!] precision is only 0.16, so this number describes whatever got flagged, NOT the poison. Read precision first.
+
+==========================================================================
+runs/dyn_blended.npz   attack=blended rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 0.868   attack success rate 0.443
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.794     0.07       0.03      10.16%
+  loss_auc        0.708     0.00       0.00      10.53%
+  loss_shape      1.000     1.00       0.50       5.26%
+  spectral_dyn    0.758     0.03       0.01      10.39%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.997   equally-easy benign groups +0.981 (95th pct +0.988)   z = +2.5
+    NOT CONFIRMED: no more coherent than equally-easy benign data.
+    [!] precision is only 0.01, so this number describes whatever got flagged, NOT the poison. Read precision first.
+
+==========================================================================
+runs/dyn_clean_label.npz   attack=clean_label rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 1.000   attack success rate 1.000
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.908     0.49       0.24       7.96%
+  loss_auc        1.000     1.00       0.50       5.26%
+  loss_shape      0.506     0.00       0.00      10.53%
+  spectral_dyn    0.732     0.04       0.02      10.33%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.943   equally-easy benign groups +0.046 (95th pct +0.062)   z = +92.5
+    CONFIRMED: moves together far more than equally-easy benign data.
+    [!] precision is only 0.02, so this number describes whatever got flagged, NOT the poison. Read precision first.
+
+==========================================================================
+runs/dyn_frequency.npz   attack=frequency rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 0.999   attack success rate 0.002
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.846     0.29       0.14       9.01%
+  loss_auc        0.725     0.00       0.00      10.53%
+  loss_shape      1.000     1.00       0.50       5.26%
+  spectral_dyn    0.746     0.05       0.03      10.26%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.999   equally-easy benign groups +0.999 (95th pct +0.999)   z = +2.7
+    NOT CONFIRMED: no more coherent than equally-easy benign data.
+    [!] precision is only 0.03, so this number describes whatever got flagged, NOT the poison. Read precision first.
+
+==========================================================================
+runs/dyn_label_flip.npz   attack=label_flip rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 0.984   attack success rate nan
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.422     0.01       0.01      10.46%
+  loss_auc        0.000     0.00       0.00      10.53%
+  loss_shape      0.995     0.99       0.49       5.33%
+  spectral_dyn    0.476     0.03       0.02      10.36%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.998   equally-easy benign groups +0.072 (95th pct +0.088)   z = +106.6
+    CONFIRMED: moves together far more than equally-easy benign data.
+    [!] precision is only 0.02, so this number describes whatever got flagged, NOT the poison. Read precision first.
+
+==========================================================================
+runs/dyn_narcissus.npz   attack=narcissus rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 0.998   attack success rate 0.036
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.930     0.59       0.30       7.40%
+  loss_auc        0.911     0.58       0.29       7.47%
+  loss_shape      0.321     0.01       0.00      10.49%
+  spectral_dyn    0.924     0.63       0.32       7.20%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.303   equally-easy benign groups +0.069 (95th pct +0.081)   z = +32.2
+    CONFIRMED: moves together far more than equally-easy benign data.
+
+==========================================================================
+runs/dyn_none.npz   attack=none rate=0.05  poisoned 0/3200  checkpoints 19
+clean test acc 0.999   attack success rate nan
+  no poison in this run (attack=none): use it as a false-alarm test.
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss        nan     0.00       0.00      10.00%
+  loss_auc          nan     0.00       0.00      10.00%
+  loss_shape        nan     0.00       0.00      10.00%
+  spectral_dyn      nan     0.00       0.00      10.00%
+
+==========================================================================
+runs/dyn_sample_specific.npz   attack=sample_specific rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 0.990   attack success rate 1.000
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      1.000     1.00       0.50       5.26%
+  loss_auc        1.000     1.00       0.50       5.26%
+  loss_shape      0.286     0.00       0.00      10.53%
+  spectral_dyn    0.999     0.99       0.50       5.30%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.218   equally-easy benign groups +0.055 (95th pct +0.061)   z = +50.0
+    CONFIRMED: moves together far more than equally-easy benign data.
+
+==========================================================================
+runs/dyn_warp.npz   attack=warp rate=0.05  poisoned 160/3200  checkpoints 19
+clean test acc 0.999   attack success rate 0.418
+==========================================================================
+  detector          AUC   recall  precision  clean lost   at budget 10%
+  early_loss      0.792     0.12       0.06       9.90%
+  loss_auc        0.725     0.00       0.00      10.53%
+  loss_shape      0.976     0.89       0.45       5.82%
+  spectral_dyn    0.283     0.00       0.00      10.53%
+
+  CONFIRMATION on the flagged set (shared-trigger detector):
+    move-together score +0.166   equally-easy benign groups +0.136 (95th pct +0.151)   z = +3.1
+    CONFIRMED: moves together far more than equally-easy benign data.
+    [!] precision is only 0.00, so this number describes whatever got flagged, NOT the poison. Read precision first.
