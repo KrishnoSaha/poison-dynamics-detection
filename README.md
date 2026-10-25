@@ -81,6 +81,6 @@ GTSRB runs and analysis scripts: Krishno Saha. CIFAR-10 runs: Taseen Hasan. Othe
 Use of AI tools
 We used an AI assistant to learn definitions and cybersecurity terms, to debug and fix errors.
 
-Reference
+Reference:
 
 Starter kit: poison_dynamics_kit (course-provided). Datasets: CIFAR-10 (Krizhevsky 2009), GTSRB (Stallkamp et al. 2012).
