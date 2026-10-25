@@ -79,7 +79,7 @@ Nibraz Khan	23410051
 GTSRB runs and analysis scripts: Krishno Saha. CIFAR-10 runs: Taseen Hasan. Other contributions: see the Individual Contributions section of the final report.
 
 Use of AI tools
-We used an AI assistant to learn definitions and cybersecurity terms, to debug and fix errors in our code
+We used an AI assistant to learn definitions and cybersecurity terms, to debug and fix errors.
 
 Reference
 
