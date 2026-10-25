@@ -1,0 +1,7 @@
+runs/
+*.npz
+*.pt
+*.pth
+__pycache__/
+.DS_Store
+data/

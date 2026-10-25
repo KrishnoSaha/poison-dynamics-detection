@@ -1,0 +1,64 @@
+device=mps  dataset=gtsrb  attack=none  poisoned 0/26640 (0.0%)  classes=43
+  epoch 1/25  checkpoints so far 11
+  epoch 2/25  checkpoints so far 21
+  epoch 3/25  checkpoints so far 32
+  epoch 4/25  checkpoints so far 42
+  epoch 5/25  checkpoints so far 53
+  epoch 6/25  checkpoints so far 63
+  epoch 7/25  checkpoints so far 73
+  epoch 8/25  checkpoints so far 84
+  epoch 9/25  checkpoints so far 94
+  epoch 10/25  checkpoints so far 105
+  epoch 11/25  checkpoints so far 115
+  epoch 12/25  checkpoints so far 125
+  epoch 13/25  checkpoints so far 136
+  epoch 14/25  checkpoints so far 146
+  epoch 15/25  checkpoints so far 157
+  epoch 16/25  checkpoints so far 167
+  epoch 17/25  checkpoints so far 177
+  epoch 18/25  checkpoints so far 188
+  epoch 19/25  checkpoints so far 198
+  epoch 20/25  checkpoints so far 209
+  epoch 21/25  checkpoints so far 219
+  epoch 22/25  checkpoints so far 229
+  epoch 23/25  checkpoints so far 240
+  epoch 24/25  checkpoints so far 250
+  epoch 25/25  checkpoints so far 261
+  clean_acc=0.9771  asr=nan
+wrote runs/gtsrb_none.npz
+device=mps  dataset=gtsrb  attack=badnets  poisoned 1332/26640 (5.0%)  classes=43
+  epoch 1/25  checkpoints so far 11
+  epoch 2/25  checkpoints so far 21
+  epoch 3/25  checkpoints so far 32
+  epoch 4/25  checkpoints so far 42
+  epoch 5/25  checkpoints so far 53
+  epoch 6/25  checkpoints so far 63
+  epoch 7/25  checkpoints so far 73
+  epoch 8/25  checkpoints so far 84
+  epoch 9/25  checkpoints so far 94
+  epoch 10/25  checkpoints so far 105
+  epoch 11/25  checkpoints so far 115
+  epoch 12/25  checkpoints so far 125
+  epoch 13/25  checkpoints so far 136
+  epoch 14/25  checkpoints so far 146
+  epoch 15/25  checkpoints so far 157
+  epoch 16/25  checkpoints so far 167
+  epoch 17/25  checkpoints so far 177
+  epoch 18/25  checkpoints so far 188
+  epoch 19/25  checkpoints so far 198
+  epoch 20/25  checkpoints so far 209
+  epoch 21/25  checkpoints so far 219
+  epoch 22/25  checkpoints so far 229
+  epoch 23/25  checkpoints so far 240
+  epoch 24/25  checkpoints so far 250
+  epoch 25/25  checkpoints so far 261
+  clean_acc=0.9765  asr=0.9466834592779177
+wrote runs/gtsrb_badnets.npz
+usage: train_log.py [-h] [--dataset {synth,mnist,cifar10,cifar100,gtsrb}]
+                    [--attack {badnets,blended,label_flip,clean_label,warp,frequency,sample_specific,narcissus,none}]
+                    [--rate RATE] [--target TARGET] [--epochs EPOCHS]
+                    [--bs BS] [--lr LR] [--probe_every PROBE_EVERY]
+                    [--adaptive_shape] [--adaptive] [--seed SEED] [--out OUT]
+                    [--device DEVICE] [--model {cnn,preactresnet18,vgg19bn}]
+train_log.py: error: argument --attack: invalid choice: 'adaptive_shape' (choose from 'badnets', 'blended', 'label_flip', 'clean_label', 'warp', 'frequency', 'sample_specific', 'narcissus', 'none')
+ALL DONE
